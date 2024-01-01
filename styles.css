@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+#title {
+    font-family: 'Lobster', cursive; /* Change the font */
+    color: #333333; /* Dark bold gray color */
+    font-size: 2.5em; /* Larger font size */
+    text-align: center; /* Center align */
+    margin: 30px 0; /* More margin for emphasis */
+    padding: 10px; /* Padding inside the rectangle */
+    background-color: rgba(0, 0, 0, 0.1); /* Transparent gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.styled-title {
+    font-family: 'Lobster', cursive; /* Change the font */
+    color: #333333; /* Dark bold gray color */
+    font-size: 2em; /* Larger font size */
+    text-align: center; /* Center align */
+    margin: 30px 0; /* More margin for emphasis */
+    padding: 10px; /* Padding inside the rectangle */
+    background-color: rgba(0, 0, 0, 0.1); /* Transparent gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#img-div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto; /* Centers the image horizontally */
+}
+
+#img-caption, #tribute-info, #tribute-link {
+    margin-bottom: 15px;
+}
+
+#tribute-link {
+    color: #0000EE;
+}
+
+#band-history {
+    list-style-type: none; /* Removes default list bullets */
+    padding: 0;
+    margin: 20px 0;
+}
+
+#band-history li {
+    background-color: rgba(0, 0, 0, 0.05); /* Light gray background for each list item */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.4;
+}
+
+.fact-label {
+    font-weight: bold; /* Makes the text before the colon bold */
+    color: #333333; /* Optional: Sets a specific color for the labels */
+}
+
+#tribute-link {
+    display: block; /* Makes the link appear as a block, easier for styling as a button */
+    text-align: center;
+    background-color: #333333; /* Dark gray background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline from the link */
+    margin: 20px auto;
+    width: fit-content; /* Adjusts width to fit content */
+}
+
+#tribute-link:hover {
+    background-color: #555555; /* Slightly lighter gray on hover */
+}
+
+.video-and-caption-container {
+    margin: 40px auto;
+    width: 560px; /* Set a fixed width or use percentages for responsiveness */
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-caption {
+    text-align: center;
+    color: #333; /* Caption text color */
+    font-size: 1em; /* Caption text size */
+    margin-top: 5px; /* Reduced space between the video and the caption */
+    margin-bottom: 20px; /* Additional bottom margin for spacing */
+}
+
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+.image-and-caption-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-caption {
+    text-align: center;
+    color: #333; /* Caption text color */
+    font-size: 1em; /* Caption text size */
+    margin-top: 5px; /* Space between the image and the caption */
+    margin-bottom: 20px; /* Space below the caption */
+}
+
+body {
+    background: linear-gradient(to right, #e6e9f0, #eef1f5);
+}
+
+#title, .styled-title {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+#band-history li {
+    list-style: inside disc;
+    position: relative;
+    padding-left: 20px;
+}
+
+#band-history li:before {
+    content: '🎵'; /* Or any other icon/emoji you prefer */
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 390px) {
+    #main, .video-and-caption-container, .image-and-caption-container {
+        width: 100%;
+        padding: 0 10px; // Add some padding so that content does not touch the edges
+    }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#image, .image-container img {
+    animation: fadeIn 2s;
+}
+
+.image-container img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tribute-link {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#tribute-link:hover {
+    background-color: #0056b3;
+}
